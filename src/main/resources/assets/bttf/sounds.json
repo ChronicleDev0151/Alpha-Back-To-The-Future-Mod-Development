@@ -1,0 +1,21 @@
+{
+  "engine_forward": {
+    "sounds": [ {"name": "bttf:engine_forward",
+	            "stream": true}]
+  },
+  "rev": {
+    "sounds": [ {"name": "bttf:rev"}]
+  },
+  "startup": {
+    "sounds": [{"name": "bttf:startup"}]
+  },
+   "gate_one_empty": {
+    "sounds": [{"name": "bttf:gate_one_empty"}]
+  },
+  "connect": {
+    "sounds": [{"name": "bttf:connect"}]
+  },
+  "rc_brake": {
+    "sounds": [{"name": "bttf:rc_brake"}]
+  }
+}

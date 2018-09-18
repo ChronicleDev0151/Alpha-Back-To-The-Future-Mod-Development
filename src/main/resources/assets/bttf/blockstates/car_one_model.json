@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "normal": { "model": "bttf:car_one_model" }
+  }
+}
