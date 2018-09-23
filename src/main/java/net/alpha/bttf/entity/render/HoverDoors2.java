@@ -1,5 +1,6 @@
 package net.alpha.bttf.entity.render;
 
+import net.alpha.bttf.entity.EntityDeloreanOneVehicleFeatures;
 import net.alpha.bttf.entity.EntityTimeTravelConvertableVehicle;
 import net.alpha.bttf.entity.EntityTimeTravelHoverVehicle;
 import net.minecraft.client.Minecraft;
@@ -42,7 +43,7 @@ public class HoverDoors2
         this(side, position, 2.0F, scale, offsetX, offsetY, offsetZ);
     }
 
-    public void render(EntityTimeTravelConvertableVehicle vehicle, float partialTicks) {
+    public void render(EntityDeloreanOneVehicleFeatures vehicle, float partialTicks) {
 
         GlStateManager.rotate(1.0F, 1.0F, 1.0F, 5.0F);
         GlStateManager.pushMatrix();
@@ -67,7 +68,7 @@ public class HoverDoors2
         GlStateManager.popMatrix();
     }
 
-    private float getWheelRotation(EntityTimeTravelConvertableVehicle vehicle, float partialTicks)
+    private float getWheelRotation(EntityDeloreanOneVehicleFeatures vehicle, float partialTicks)
     {
         if(position == Position.LEFT)
         {

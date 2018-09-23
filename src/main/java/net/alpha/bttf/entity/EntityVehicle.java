@@ -1,5 +1,6 @@
 package net.alpha.bttf.entity;
 
+import com.sun.org.apache.xpath.internal.operations.Bool;
 import io.netty.buffer.ByteBuf;
 import net.alpha.bttf.Main;
 import net.alpha.bttf.client.ClientEvent;
@@ -11,9 +12,10 @@ import net.alpha.bttf.item.ItemPlutonium;
 import net.alpha.bttf.network.PacketHandler;
 import net.alpha.bttf.network.messages.MessageAcceleration;
 import net.alpha.bttf.network.messages.MessageBrake;
+import net.alpha.bttf.network.messages.MessageEngine;
 import net.alpha.bttf.network.messages.MessageTurn;
 import net.alpha.bttf.proxy.ClientProxy;
-import net.alpha.bttf.timetravel.TimeTravel;
+import net.alpha.bttf.timetravel.TimeTravelTypes;
 import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.GlStateManager;
@@ -46,7 +48,7 @@ import scala.tools.nsc.interpreter.Power;
 import javax.annotation.Nullable;
 import java.util.List;
 
-public abstract class EntityVehicle extends TimeTravel implements IEntityAdditionalSpawnData {
+public abstract class EntityVehicle extends Entity implements IEntityAdditionalSpawnData {
     private static final DataParameter<Float> CURRENT_SPEED = EntityDataManager.createKey(EntityVehicle.class, DataSerializers.FLOAT);
     private static final DataParameter<Float> ACCELERATION_SPEED = EntityDataManager.createKey(EntityVehicle.class, DataSerializers.FLOAT);
     private static final DataParameter<Integer> TURN_DIRECTION = EntityDataManager.createKey(EntityVehicle.class, DataSerializers.VARINT);
@@ -56,17 +58,17 @@ public abstract class EntityVehicle extends TimeTravel implements IEntityAdditio
     private static final DataParameter<Integer> TIME_SINCE_HIT = EntityDataManager.createKey(EntityVehicle.class, DataSerializers.VARINT);
     private static final DataParameter<Float> DAMAGE_TAKEN = EntityDataManager.createKey(EntityVehicle.class, DataSerializers.FLOAT);
     private static final DataParameter<Integer> ENGINE_TYPE = EntityDataManager.createKey(EntityVehicle.class, DataSerializers.VARINT);
-    private static final DataParameter<Boolean> HORN = EntityDataManager.createKey(EntityVehicle.class, DataSerializers.BOOLEAN);
     private static final DataParameter<Boolean> BRAKING = EntityDataManager.createKey(EntityVehicle.class, DataSerializers.BOOLEAN);
-    private static final DataParameter<Integer> TIME_TRAVEL_ENUM = EntityDataManager.createKey(EntityVehicle.class, DataSerializers.VARINT);
     private static final DataParameter<Boolean> REMOTE_CONTROLLING = EntityDataManager.createKey(EntityVehicle.class, DataSerializers.BOOLEAN);
     private static final DataParameter<Float> CURRENT_FUEL = EntityDataManager.createKey(EntityVehicle.class, DataSerializers.FLOAT);
-
+    private static final DataParameter<Boolean> ENGINE_POWER = EntityDataManager.createKey(EntityVehicle.class, DataSerializers.BOOLEAN);
 
     public static Entity renderEntity = null;
     public static boolean renderCarView = false;
     public static boolean remoteControlling = false;
     public static boolean doorIsOpen = false;
+
+    public static boolean engineToglle = true;
 
     public float prevCurrentSpeed;
     public float currentSpeed;
@@ -166,11 +168,10 @@ public abstract class EntityVehicle extends TimeTravel implements IEntityAdditio
         this.dataManager.register(TIME_SINCE_HIT, 0);
         this.dataManager.register(DAMAGE_TAKEN, 0F);
         this.dataManager.register(ENGINE_TYPE, 0);
-        this.dataManager.register(HORN, false);
         this.dataManager.register(BRAKING, false);
-        this.dataManager.register(TIME_TRAVEL_ENUM, TimeTravelEnum.NONE.ordinal());
         this.dataManager.register(REMOTE_CONTROLLING, false);
         this.dataManager.register(CURRENT_FUEL, 0F);
+        this.dataManager.register(ENGINE_POWER, true);
 
         if (this.world.isRemote) {
             this.onClientInit();
@@ -276,16 +277,18 @@ public abstract class EntityVehicle extends TimeTravel implements IEntityAdditio
         }
 
         /* Handle the current speed of the vehicle based on rider's forward movement */
-        this.updateSpeed();
         this.updateTurning();
+        this.updateSpeed();
         this.updateVehicle();
-        this.updateAcceleration();
         this.updateBrakeSystem();
-        this.updateRC();
+        this.updateEngineSystem();
         this.setSpeed(currentSpeed);
-        //   this.updatePassenger(getControllingPassenger());
+        this.updateTurning();
+        this.updatePassenger(getControllingPassenger());
         this.updateVehicleMotion();
         this.onClientUpdate();
+
+        this.updateTurning();
 
         /* Updates the direction of the vehicle */
         rotationYaw -= deltaYaw;
@@ -328,6 +331,7 @@ public abstract class EntityVehicle extends TimeTravel implements IEntityAdditio
             Doors2.open = true;
         }
     }
+
     public void updateBrakeSystem() {
         boolean brake = Minecraft.getMinecraft().gameSettings.keyBindJump.isKeyDown();
 
@@ -349,12 +353,12 @@ public abstract class EntityVehicle extends TimeTravel implements IEntityAdditio
         if (this.remoteControlling == true && isBraking() & currentSpeed == 0F) {
             world.playSound((EntityPlayer) null, getPosition(), ModSounds.RC_BRAKE, SoundCategory.AMBIENT, 5.0F, 1.0F);
         }
-        if (Accdirection == AccelerationDirection.FORWARD && this.isBraking()) {
+        if (Accdirection == AccelerationDirection.FORWARD && this.isBraking() & currentSpeed == 0F) {
             world.playSound((EntityPlayer) null, getPosition(), ModSounds.REV, SoundCategory.AMBIENT, 2.5F, 1.0F);
         }
-        if (EntityTimeTravelConvertableVehicle.hover == true) {
+    /*    if (EntityTimeTravelConvertableVehicle.INSTANCE.isHovering() == true) {
             brake = ClientProxy.KEY_HOVER_BRAKE.isKeyDown();
-        }
+        } */
     }
 
     /**
@@ -374,131 +378,64 @@ public abstract class EntityVehicle extends TimeTravel implements IEntityAdditio
         }
     }
 
-    public void updateTimeTravel()
-    {
-        TimeTravelEnum timeTravelEnum = getTimeTravelEnum();
-        if(timeTravelEnum == TimeTravelEnum.ONE)
-        {
-            this.timeTravelOne(timeTravelEnum);
-        }
-    }
-
-
-    public void timeTravelOne(TimeTravelEnum timeTravelEnum) {
-
-        if (this.currentSpeed == 77F) {
-            // Left Front Wheel
-            Vec3d smokePosition = this.getTimeTravelWheelPosition().rotateYaw(-this.rotationYaw * 0.017453292F);
-            this.world.spawnParticle(EnumParticleTypes.FLAME, this.posX + smokePosition.x, this.posY + smokePosition.y, this.posZ + smokePosition.z, -this.motionX, 0.0D, -this.motionZ);
-            this.world.spawnParticle(EnumParticleTypes.CRIT_MAGIC, this.posX + smokePosition.x, this.posY + smokePosition.y, this.posZ + smokePosition.z, -this.motionX, 0.0D, -this.motionZ);
-
-            // Right Front Wheel
-            Vec3d smokePosition2 = this.getTimeTravelWheel2Position().rotateYaw(-this.rotationYaw * 0.017453292F);
-            this.world.spawnParticle(EnumParticleTypes.FLAME, this.posX + smokePosition2.x, this.posY + smokePosition2.y, this.posZ + smokePosition.z, -this.motionX, 0.0D, -this.motionZ);
-            this.world.spawnParticle(EnumParticleTypes.CRIT_MAGIC, this.posX + smokePosition2.x, this.posY + smokePosition2.y, this.posZ + smokePosition.z, -this.motionX, 0.0D, -this.motionZ);
-
-            Vec3d front = this.getTimeTravelFrontAnimationPosition().rotateYaw(-this.rotationYaw * 0.017453292F);
-            this.world.spawnParticle(EnumParticleTypes.FIREWORKS_SPARK, this.posX + front.x, this.posY + front.y, this.posZ + front.z, -this.motionX, 0.0D, -this.motionZ);
-
-            Vec3d front2 = new Vec3d(-1, 1.6, 1.45);
-            this.world.spawnParticle(EnumParticleTypes.FIREWORKS_SPARK, this.posX + front2.x, this.posY + front2.y, this.posZ + front2.z, -this.motionX, 0.0D, -this.motionZ);
-
-            Vec3d front3 = new Vec3d(2, 1.6, 1.45);
-            this.world.spawnParticle(EnumParticleTypes.FIREWORKS_SPARK, this.posX + front3.x, this.posY + front3.y, this.posZ + front3.z, -this.motionX, 0.0D, -this.motionZ);
-
-
-            this.getEmptyGate();
-            //    System.out.println("Oh No, Something Broke Message Chronicle Or Staff On Discord If This Happens!");
-
-        }
-
-//            this.mc.getTextureManager().bindTexture(Textures.ICE);
-    }
-
-
-    private void updateSpeed() {
+    protected void updateSpeed() {
         currentSpeed = this.getSpeed();
 
         AccelerationDirection acceleration = this.getAcceleration();
-        if (remoteControlling == true) {
-            if (this.getControllingPassenger() != null) {
-                if (acceleration == AccelerationDirection.FORWARD) {
-                    this.currentSpeed += this.getAccelerationSpeed();
-                    if (this.currentSpeed > this.getMaxSpeed()) {
-                        this.currentSpeed = this.getMaxSpeed();
-                    }
-                } else if (acceleration == AccelerationDirection.REVERSE) {
-                    this.currentSpeed -= this.getAccelerationSpeed();
-                    if (this.currentSpeed < -(4.0F / 2)) {
-                        this.currentSpeed = -(4.0F / 2);
-                    }
-                } else {
-                    this.currentSpeed *= 0.9;
+        if (this.getControllingPassenger() != null) {
+            if (acceleration == AccelerationDirection.FORWARD) {
+                this.currentSpeed += this.getAccelerationSpeed();
+                if (this.currentSpeed > this.getMaxSpeed()) {
+                    this.currentSpeed = this.getMaxSpeed();
+                }
+            } else if (acceleration == AccelerationDirection.REVERSE) {
+                this.currentSpeed -= this.getAccelerationSpeed();
+                if (this.currentSpeed < -(4.0F / 2)) {
+                    this.currentSpeed = -(4.0F / 2);
                 }
             } else {
-                this.currentSpeed *= 0.5;
+                this.currentSpeed *= 0.9;
             }
-        } else if (remoteControlling == false) {
-            if (this.getControllingPassenger() != null) {
-                if (acceleration == AccelerationDirection.FORWARD) {
-                    this.currentSpeed += this.getAccelerationSpeed();
-                    if (this.currentSpeed > this.getMaxSpeed()) {
-                        this.currentSpeed = this.getMaxSpeed();
-                    }
-                } else if (acceleration == AccelerationDirection.REVERSE) {
-                    this.currentSpeed -= this.getAccelerationSpeed();
-                    if (this.currentSpeed < -(4.0F / 2)) {
-                        this.currentSpeed = -(4.0F / 2);
-                    }
-                } else {
-                    this.currentSpeed *= 0.9;
-                }
-            } else {
-                this.currentSpeed *= 0.5;
-            }
+        } else {
+            this.currentSpeed *= 0.9;
         }
-
-        /* Applies the speed multiplier to the current speed */
-        currentSpeed = currentSpeed + (currentSpeed * speedMultiplier);
     }
 
-
-    protected void updateTurning() {
+    protected void updateTurning()
+    {
         TurnDirection direction = this.getTurnDirection();
-        if (remoteControlling == true) {
-            if (this.getControllingPassenger() != null && direction != TurnDirection.FORWARD) {
-                this.turnAngle += direction.dir * getTurnSensitivity();
-                if (Math.abs(this.turnAngle) > getMaxTurnAngle()) {
-                    this.turnAngle = getMaxTurnAngle() * direction.dir;
-                }
-            } else {
-                this.turnAngle *= 0.75;
+        if(this.getControllingPassenger() != null && direction != TurnDirection.FORWARD)
+        {
+            this.turnAngle += direction.dir * getTurnSensitivity();
+            if(Math.abs(this.turnAngle) > getMaxTurnAngle())
+            {
+                this.turnAngle = getMaxTurnAngle() * direction.dir;
             }
-        } else if (remoteControlling == false) {
-            if (this.getControllingPassenger() != null && direction != TurnDirection.FORWARD) {
-                this.turnAngle += direction.dir * getTurnSensitivity();
-                if (Math.abs(this.turnAngle) > getMaxTurnAngle()) {
-                    this.turnAngle = getMaxTurnAngle() * direction.dir;
-                }
-            } else {
-                this.turnAngle *= 0.75;
-            }
+        }
+        else
+        {
+            this.turnAngle *= 0.75;
         }
         this.wheelAngle = this.turnAngle * Math.max(0.25F, 1.0F - Math.abs(currentSpeed / 30F));
         this.deltaYaw = this.wheelAngle * (currentSpeed / 30F) / 2F;
     }
 
-    public void updateAcceleration() {
-        EntityLivingBase entity = (EntityLivingBase) this.getControllingPassenger();
-        if (entity != null && entity.equals(Minecraft.getMinecraft().player)) {
-            AccelerationDirection acceleration = AccelerationDirection.fromEntity(entity);
-            if (this.getAcceleration() != acceleration) {
-                this.setAcceleration(acceleration);
-                //   world.playSound((EntityPlayer)null, getPosition(), ModSounds.ENGINE_FORWARD, SoundCategory.AMBIENT, 5.0F, 1.0F);
-                PacketHandler.INSTANCE.sendToServer(new MessageAcceleration(acceleration));
-            }
+    protected void updateEngineSystem()
+    {
+        boolean toggle = ClientProxy.KEY_ENGINE_STARTUP.isPressed();
+
+        if(this.isOnline() != toggle)
+        {
+            this.setEngineOn(toggle);
+            PacketHandler.INSTANCE.sendToServer(new MessageEngine(toggle));
+            this.currentSpeed = 0F;
+        }
+        else
+        {
+
         }
     }
+
 
     public void createParticles() {
         if (this.shouldShowEngineSmoke() && this.ticksExisted % 2 == 0) {
@@ -507,31 +444,32 @@ public abstract class EntityVehicle extends TimeTravel implements IEntityAdditio
         }
     }
 
-    public float decreaseSpeed() {
 
-        currentSpeed = MAXSPEEDDecelerated;
-
-        return 0F;
-    }
 
     @SideOnly(Side.CLIENT)
-    public void onClientUpdate() {
+    public void onClientUpdate()
+    {
         EntityLivingBase entity = (EntityLivingBase) this.getControllingPassenger();
-        if (entity != null && entity.equals(Minecraft.getMinecraft().player)) {
-          /*  AccelerationDirection acceleration = AccelerationDirection.fromEntity(entity);
+        if(entity != null && entity.equals(Minecraft.getMinecraft().player))
+        {
+            AccelerationDirection acceleration = AccelerationDirection.fromEntity(entity);
             if(this.getAcceleration() != acceleration)
             {
                 this.setAcceleration(acceleration);
                 PacketHandler.INSTANCE.sendToServer(new MessageAcceleration(acceleration));
-            }  */
+            }
 
             TurnDirection direction = TurnDirection.FORWARD;
-            if (entity.moveStrafing < 0) {
+            if(entity.moveStrafing < 0)
+            {
                 direction = TurnDirection.RIGHT;
-            } else if (entity.moveStrafing > 0) {
+            }
+            else if(entity.moveStrafing > 0)
+            {
                 direction = TurnDirection.LEFT;
             }
-            if (this.getTurnDirection() != direction) {
+            if(this.getTurnDirection() != direction)
+            {
                 this.setTurnDirection(direction);
                 PacketHandler.INSTANCE.sendToServer(new MessageTurn(direction));
             }
@@ -541,19 +479,31 @@ public abstract class EntityVehicle extends TimeTravel implements IEntityAdditio
     @Override
     public boolean processInitialInteract(EntityPlayer player, EnumHand hand) {
         if (!world.isRemote) {
-            ItemStack stack = player.getHeldItem(hand);
             this.doorIsOpen = true;
             player.startRiding(this);
             world.playSound((EntityPlayer) null, getPosition(), ModSounds.STARTUP, SoundCategory.AMBIENT, 5.0F, 1.0F);
         } else {
             ItemStack stack = player.getHeldItem(hand);
             world.playSound((EntityPlayer) null, getPosition(), ModSounds.STARTUP, SoundCategory.AMBIENT, 5.0F, 1.0F);
-            if (!stack.isEmpty()) {
-                if (stack.getItem() == ModItems.CONTROLLER) {
-                    remoteControlling = true;
-                    world.playSound((EntityPlayer) null, getPosition(), ModSounds.CONNECT, SoundCategory.AMBIENT, 5.0F, 1.0F);
-                    player.sendMessage(new TextComponentString(TextFormatting.GOLD.toString() + TextFormatting.BOLD.toString() + "Car succesfully linked!"));
-                    player.sendMessage(new TextComponentString("Use WASD to drive around"));
+            if(!stack.isEmpty())
+            {
+                if(stack.getItem() == ModItems.CONTROLLER)
+                {
+                    if(!stack.hasTagCompound())
+                    {
+                        stack.setTagCompound(new NBTTagCompound());
+                    }
+                    if(!stack.getTagCompound().hasKey("linked_car"))
+                    {
+                        stack.getTagCompound().setString("linked_car", getUniqueID().toString());
+                        if(!world.isRemote)
+                        {
+                            world.playSound((EntityPlayer)null, getPosition(), ModSounds.CONNECT, SoundCategory.AMBIENT, 1.0F, 1.0F);
+                            player.sendMessage(new TextComponentString(TextFormatting.GOLD.toString() + TextFormatting.BOLD.toString() + "Car succesfully linked!"));
+                            player.sendMessage(new TextComponentString("Use WASD to drive around. Press C to view the car's camera."));
+                        }
+                    }
+                    return true;
                 }
             }
         }
@@ -628,43 +578,6 @@ public abstract class EntityVehicle extends TimeTravel implements IEntityAdditio
     @Nullable
     public Entity getControllingPassenger() {
         return this.getPassengers().isEmpty() ? null : this.getPassengers().get(0);
-    }
-
-    public void updateRC()
-    {
-
-        EntityTimeTravelVehicle vehicle = null;
-
-        if(remoteControlling == true) {
-
-                AccelerationDirection acceleration = this.getAcceleration();
-                if (acceleration == AccelerationDirection.FORWARD) {
-                    this.currentSpeed *= 0.95F;
-                }
-                if (acceleration == AccelerationDirection.REVERSE) {
-                    this.currentSpeed -= 0.95F;
-                }
-                this.setView(vehicle);
-
-        }
-    }
-
-    public void setView(EntityTimeTravelVehicle vehicle)
-    {
-        Minecraft mc = Minecraft.getMinecraft();
-        EntityPlayer player = mc.player;
-        if(vehicle != null)
-        {
-            renderEntity = vehicle;
-            mc.setRenderViewEntity(renderEntity);
-            renderCarView = true;
-        }
-        else
-        {
-            renderEntity = null;
-            mc.setRenderViewEntity(player);
-            renderCarView = false;
-        }
     }
 
     @Override
@@ -818,12 +731,17 @@ public abstract class EntityVehicle extends TimeTravel implements IEntityAdditio
         return false;
     }
 
-    public void setHorn(boolean activated) {
-        this.dataManager.set(HORN, activated);
+    public boolean isOnline()
+    {
+        return this.dataManager.get(ENGINE_POWER);
     }
 
-    public boolean getHorn() {
-        return this.dataManager.get(HORN);
+    public void setEngineOn(boolean activated) {
+        this.dataManager.set(ENGINE_POWER, false);
+    }
+
+    public boolean getEngineOn() {
+        return this.dataManager.get(ENGINE_POWER);
     }
 
 
@@ -913,42 +831,6 @@ public abstract class EntityVehicle extends TimeTravel implements IEntityAdditio
 
     @Override
     public void readSpawnData(ByteBuf additionalData) {
-
-    }
-
-    public TimeTravelEnum getTimeTravelEnum() {
-        return TimeTravelEnum.values()[this.dataManager.get(TIME_TRAVEL_ENUM)];
-    }
-
-    public void setTimeTravelEnum(TimeTravelEnum timeTravelEnum)
-    {
-        this.dataManager.set(TIME_TRAVEL_ENUM, timeTravelEnum.ordinal());
-    }
-
-    public enum TimeTravelEnum
-    {
-        ONE, TWO, THREE, FOUR, NONE;
-
-        public static TimeTravelEnum getType(EntityLivingBase vehicle)
-        {
-            if(CAR_ONE_TT > 0)
-            {
-                return ONE;
-            }
-            if(CAR_TWO_TT < 0)
-            {
-                return TWO;
-            }
-            if(CAR_THREE_TT >= 0)
-            {
-                return THREE;
-            }
-            if(TRAIN_TT <= 0)
-            {
-                return FOUR;
-            }
-            return NONE;
-        }
 
     }
 

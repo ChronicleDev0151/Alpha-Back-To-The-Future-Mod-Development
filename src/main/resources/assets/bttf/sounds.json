@@ -17,5 +17,8 @@
   },
   "rc_brake": {
     "sounds": [{"name": "bttf:rc_brake"}]
+  },
+  "vehicle_idle": {
+    "sounds": [{"name": "bttf:vehicle_idle"}]
   }
 }

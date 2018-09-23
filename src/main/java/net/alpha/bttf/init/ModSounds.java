@@ -25,6 +25,8 @@ public class ModSounds
 
     public static final SoundEvent STARTUP;
 
+    public static final SoundEvent IDLE;
+
     static
     {
         TRAVEL_GATE_ONE = registerSound("bttf:gate_one");
@@ -37,6 +39,7 @@ public class ModSounds
         RC_BRAKE = registerSound("bttf:rc_brake");
         PLUTONIUM_CHAMBER = registerSound("bttf:plutonium_chamber");
         PLUTONIUM_CHAMBER_CLOSE = registerSound("bttf:plutonium_chamber_close");
+        IDLE = registerSound("bttf:vehicle_idle");
 
     }
 
@@ -62,6 +65,7 @@ public class ModSounds
             registry.register(RC_BRAKE);
             registry.register(PLUTONIUM_CHAMBER);
             registry.register(PLUTONIUM_CHAMBER_CLOSE);
+            registry.register(IDLE);
         }
     }
 

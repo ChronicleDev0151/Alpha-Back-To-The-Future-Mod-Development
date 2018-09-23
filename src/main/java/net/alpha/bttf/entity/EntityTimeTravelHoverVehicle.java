@@ -2,8 +2,6 @@ package net.alpha.bttf.entity;
 
 import net.alpha.bttf.network.PacketHandler;
 import net.alpha.bttf.network.messages.MessageHover;
-import net.alpha.bttf.proxy.ClientProxy;
-import net.alpha.bttf.timetravel.Textures;
 import net.minecraft.client.Minecraft;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;

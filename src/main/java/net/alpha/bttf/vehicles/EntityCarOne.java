@@ -1,9 +1,11 @@
 package net.alpha.bttf.vehicles;
 
 import net.alpha.bttf.client.EntityRayTrace.IEntityRaytraceable;
+import net.alpha.bttf.entity.EntityDeloreanOneVehicleFeatures;
 import net.alpha.bttf.entity.EntityTimeTravelVehicle;
 import net.alpha.bttf.init.ModItems;
 import net.alpha.bttf.init.ModSounds;
+import net.alpha.bttf.timetravel.TimeTravelTypes;
 import net.minecraft.entity.Entity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
@@ -14,11 +16,12 @@ import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class EntityCarOne extends EntityTimeTravelVehicle implements IEntityRaytraceable
+public class EntityCarOne extends EntityDeloreanOneVehicleFeatures implements IEntityRaytraceable
 {
      public EntityCarOne(World worldIn){
          super(worldIn);
          this.setSize(1.0F, 1.0F); // 1.0F 0.3F
+         this.setTimeTravelType(TimeTravelTypes.TIMETRAVELONE);
         // this.setDelaySpeed(1000);
      }
 
@@ -118,6 +121,8 @@ public class EntityCarOne extends EntityTimeTravelVehicle implements IEntityRayt
      public SoundEvent getMovingSound() {
          return ModSounds.ENGINE_FORWARD;
      }
+
+
 
     @Override
     public SoundEvent getEngineStartupSound() {

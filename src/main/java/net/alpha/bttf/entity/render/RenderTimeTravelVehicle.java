@@ -1,5 +1,6 @@
 package net.alpha.bttf.entity.render;
 
+import net.alpha.bttf.entity.EntityDeloreanOneVehicleFeatures;
 import net.alpha.bttf.entity.EntityTimeTravelVehicle;
 import net.minecraft.client.renderer.entity.RenderManager;
 import net.minecraft.util.ResourceLocation;
@@ -8,7 +9,7 @@ import javax.annotation.Nullable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class RenderTimeTravelVehicle<T extends EntityTimeTravelVehicle> extends RenderVehicle<T> {
+public class RenderTimeTravelVehicle<T extends EntityDeloreanOneVehicleFeatures> extends RenderVehicle<T> {
 
     protected List<Wheels> wheels = new ArrayList<>();
     protected List<Doors_Hover> doors = new ArrayList<>();

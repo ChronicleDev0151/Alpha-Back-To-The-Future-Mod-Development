@@ -1,0 +1,2186 @@
+{
+	"__comment": "Designed by BFlare0151 with Cubik Studio - https://cubik.studio",
+	"textures": {
+		"particle": "bttf:items/e_particle",
+		"rail_road_palette": "bttf:blocks/rail_road_palette"
+	},
+	"elements": [ 	 
+		{
+			"__comment": "Voxels-999999",
+			"from": [ -2, 8, 4.625 ],
+			"to": [ 10, 8.125, 5.125 ],
+			"faces": {
+				"down": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"up": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"north": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-999999",
+			"from": [ -2, 8, 10.125 ],
+			"to": [ 7.875, 8.125, 10.625 ],
+			"faces": {
+				"down": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"up": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"north": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-999999",
+			"from": [ -2, 8.125, 4.75 ],
+			"to": [ 18, 8.625, 4.875 ],
+			"faces": {
+				"down": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"up": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"north": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-999999",
+			"from": [ -2, 8.125, 4.875 ],
+			"to": [ 17.875, 8.25, 5 ],
+			"faces": {
+				"down": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"up": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-999999",
+			"from": [ -2, 8.125, 10.375 ],
+			"to": [ 18, 8.25, 10.5 ],
+			"faces": {
+				"down": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"up": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"north": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-999999",
+			"from": [ -2, 8.25, 10.375 ],
+			"to": [ 17.875, 8.625, 10.5 ],
+			"faces": {
+				"up": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"north": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-999999",
+			"from": [ -2, 8.5, 4.875 ],
+			"to": [ 18, 8.625, 5 ],
+			"faces": {
+				"down": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"up": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-999999",
+			"from": [ -2, 8.5, 10.25 ],
+			"to": [ 18, 8.625, 10.375 ],
+			"faces": {
+				"down": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"up": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"north": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-999999",
+			"from": [ -1.875, 8, 4.5 ],
+			"to": [ -0.375, 8.125, 4.625 ],
+			"faces": {
+				"down": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"up": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"north": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-999999",
+			"from": [ -1.875, 8, 10.625 ],
+			"to": [ -0.375, 8.125, 10.75 ],
+			"faces": {
+				"down": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"up": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-999999",
+			"from": [ -1.875, 8.125, 10.25 ],
+			"to": [ 18, 8.25, 10.375 ],
+			"faces": {
+				"down": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"up": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"north": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-999999",
+			"from": [ -1.875, 8.25, 10.25 ],
+			"to": [ 17.875, 8.5, 10.375 ],
+			"faces": {
+				"north": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-999999",
+			"from": [ -1.875, 8.375, 4.625 ],
+			"to": [ 17.875, 8.625, 4.75 ],
+			"faces": {
+				"down": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"up": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"north": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-999999",
+			"from": [ -1.875, 8.375, 4.875 ],
+			"to": [ 17.875, 8.5, 5 ],
+			"faces": {
+				"down": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-999999",
+			"from": [ -1.875, 8.375, 10.5 ],
+			"to": [ 17.875, 8.625, 10.625 ],
+			"faces": {
+				"down": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"up": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-999999",
+			"from": [ -1.875, 8.625, 4.75 ],
+			"to": [ 17.875, 8.75, 5 ],
+			"faces": {
+				"down": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"up": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"north": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-999999",
+			"from": [ -1.875, 8.625, 10.25 ],
+			"to": [ 17.875, 8.75, 10.5 ],
+			"faces": {
+				"down": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"up": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"north": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-606060",
+			"from": [ -0.5, 7.375, 2.875 ],
+			"to": [ -0.375, 8, 4.625 ],
+			"faces": {
+				"down": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"up": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"north": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-606060",
+			"from": [ -0.5, 7.375, 4.625 ],
+			"to": [ -0.375, 7.875, 13.125 ],
+			"faces": {
+				"down": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"up": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-999999",
+			"from": [ -0.5, 7.875, 4.625 ],
+			"to": [ -0.375, 8, 5.125 ],
+			"faces": {
+				"west": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-606060",
+			"from": [ -0.5, 7.875, 5.125 ],
+			"to": [ -0.375, 8, 10.125 ],
+			"faces": {
+				"up": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-999999",
+			"from": [ -0.5, 7.875, 10.125 ],
+			"to": [ -0.375, 8, 10.625 ],
+			"faces": {
+				"west": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-606060",
+			"from": [ -0.5, 7.875, 10.625 ],
+			"to": [ -0.375, 8, 13.125 ],
+			"faces": {
+				"up": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-999999",
+			"from": [ -0.5, 8, 5.125 ],
+			"to": [ -0.375, 8.125, 5.25 ],
+			"faces": {
+				"up": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-999999",
+			"from": [ -0.5, 8, 10 ],
+			"to": [ -0.375, 8.125, 10.125 ],
+			"faces": {
+				"up": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"north": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-232323",
+			"from": [ -0.375, 7.25, 2.875 ],
+			"to": [ 0.5, 7.875, 3 ],
+			"faces": {
+				"down": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"north": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-232323",
+			"from": [ -0.375, 7.25, 3 ],
+			"to": [ 0.5, 7.375, 13.125 ],
+			"faces": {
+				"down": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"up": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-232323",
+			"from": [ -0.375, 7.375, 13 ],
+			"to": [ 0.5, 7.5, 13.125 ],
+			"faces": {
+				"north": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-606060",
+			"from": [ -0.375, 7.5, 13 ],
+			"to": [ 0.5, 8.125, 13.125 ],
+			"faces": {
+				"up": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"north": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-606060",
+			"from": [ -0.375, 7.875, 2.875 ],
+			"to": [ 0.5, 8.125, 3 ],
+			"faces": {
+				"up": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"north": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-606060",
+			"from": [ -0.375, 8, 3 ],
+			"to": [ 0.5, 8.125, 4.625 ],
+			"faces": {
+				"down": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"up": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-606060",
+			"from": [ -0.375, 8, 5.125 ],
+			"to": [ 0.5, 8.125, 10.125 ],
+			"faces": {
+				"down": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"up": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-606060",
+			"from": [ -0.375, 8, 10.625 ],
+			"to": [ 0.5, 8.125, 13 ],
+			"faces": {
+				"down": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"up": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-232323",
+			"from": [ 0.375, 7.375, 3 ],
+			"to": [ 0.5, 7.875, 13 ],
+			"faces": {
+				"up": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-606060",
+			"from": [ 0.375, 7.875, 3 ],
+			"to": [ 0.5, 8, 10.125 ],
+			"faces": {
+				"up": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-999999",
+			"from": [ 0.375, 7.875, 10.125 ],
+			"to": [ 0.5, 8, 10.625 ],
+			"faces": {
+				"west": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-606060",
+			"from": [ 0.375, 7.875, 10.625 ],
+			"to": [ 0.5, 8, 13 ],
+			"faces": {
+				"west": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-999999",
+			"from": [ 0.5, 8, 4.5 ],
+			"to": [ 1.75, 8.125, 4.625 ],
+			"faces": {
+				"down": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"up": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"north": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-999999",
+			"from": [ 0.5, 8, 10.625 ],
+			"to": [ 1.75, 8.125, 10.75 ],
+			"faces": {
+				"down": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"up": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-606060",
+			"from": [ 1.625, 7.375, 2.875 ],
+			"to": [ 1.75, 8, 4.625 ],
+			"faces": {
+				"down": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"up": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"north": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-606060",
+			"from": [ 1.625, 7.375, 4.625 ],
+			"to": [ 1.75, 7.875, 13.125 ],
+			"faces": {
+				"down": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"up": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-999999",
+			"from": [ 1.625, 7.875, 4.625 ],
+			"to": [ 1.75, 8, 5.125 ],
+			"faces": {
+				"west": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-606060",
+			"from": [ 1.625, 7.875, 5.125 ],
+			"to": [ 1.75, 8, 10.125 ],
+			"faces": {
+				"up": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-999999",
+			"from": [ 1.625, 7.875, 10.125 ],
+			"to": [ 1.75, 8, 10.625 ],
+			"faces": {
+				"west": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-606060",
+			"from": [ 1.625, 7.875, 10.625 ],
+			"to": [ 1.75, 8, 13.125 ],
+			"faces": {
+				"up": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-999999",
+			"from": [ 1.625, 8, 5.125 ],
+			"to": [ 1.75, 8.125, 5.25 ],
+			"faces": {
+				"up": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-999999",
+			"from": [ 1.625, 8, 10 ],
+			"to": [ 1.75, 8.125, 10.125 ],
+			"faces": {
+				"up": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"north": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-232323",
+			"from": [ 1.75, 7.25, 2.875 ],
+			"to": [ 2.625, 7.875, 3 ],
+			"faces": {
+				"down": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"north": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-232323",
+			"from": [ 1.75, 7.25, 3 ],
+			"to": [ 2.625, 7.375, 13.125 ],
+			"faces": {
+				"down": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"up": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-232323",
+			"from": [ 1.75, 7.375, 13 ],
+			"to": [ 2.625, 7.5, 13.125 ],
+			"faces": {
+				"north": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-606060",
+			"from": [ 1.75, 7.5, 13 ],
+			"to": [ 2.625, 8.125, 13.125 ],
+			"faces": {
+				"up": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"north": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-606060",
+			"from": [ 1.75, 7.875, 2.875 ],
+			"to": [ 2.625, 8.125, 3 ],
+			"faces": {
+				"up": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"north": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-606060",
+			"from": [ 1.75, 8, 3 ],
+			"to": [ 2.625, 8.125, 4.625 ],
+			"faces": {
+				"down": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"up": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-606060",
+			"from": [ 1.75, 8, 5.125 ],
+			"to": [ 2.625, 8.125, 10.125 ],
+			"faces": {
+				"down": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"up": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-606060",
+			"from": [ 1.75, 8, 10.625 ],
+			"to": [ 2.625, 8.125, 13 ],
+			"faces": {
+				"down": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"up": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-232323",
+			"from": [ 2.5, 7.375, 3 ],
+			"to": [ 2.625, 7.875, 13 ],
+			"faces": {
+				"up": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-606060",
+			"from": [ 2.5, 7.875, 3 ],
+			"to": [ 2.625, 8, 10.125 ],
+			"faces": {
+				"up": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-999999",
+			"from": [ 2.5, 7.875, 10.125 ],
+			"to": [ 2.625, 8, 10.625 ],
+			"faces": {
+				"west": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-606060",
+			"from": [ 2.5, 7.875, 10.625 ],
+			"to": [ 2.625, 8, 13 ],
+			"faces": {
+				"west": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-999999",
+			"from": [ 2.625, 8, 4.5 ],
+			"to": [ 3.75, 8.125, 4.625 ],
+			"faces": {
+				"down": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"up": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"north": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-999999",
+			"from": [ 2.625, 8, 10.625 ],
+			"to": [ 3.75, 8.125, 10.75 ],
+			"faces": {
+				"down": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"up": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-606060",
+			"from": [ 3.625, 7.375, 2.875 ],
+			"to": [ 3.75, 8, 4.625 ],
+			"faces": {
+				"down": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"up": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"north": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-606060",
+			"from": [ 3.625, 7.375, 4.625 ],
+			"to": [ 3.75, 7.875, 13.125 ],
+			"faces": {
+				"down": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"up": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-999999",
+			"from": [ 3.625, 7.875, 4.625 ],
+			"to": [ 3.75, 8, 5.125 ],
+			"faces": {
+				"west": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-606060",
+			"from": [ 3.625, 7.875, 5.125 ],
+			"to": [ 3.75, 8, 10.125 ],
+			"faces": {
+				"up": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-999999",
+			"from": [ 3.625, 7.875, 10.125 ],
+			"to": [ 3.75, 8, 10.625 ],
+			"faces": {
+				"west": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-606060",
+			"from": [ 3.625, 7.875, 10.625 ],
+			"to": [ 3.75, 8, 13.125 ],
+			"faces": {
+				"up": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-999999",
+			"from": [ 3.625, 8, 5.125 ],
+			"to": [ 3.75, 8.125, 5.25 ],
+			"faces": {
+				"up": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-999999",
+			"from": [ 3.625, 8, 10 ],
+			"to": [ 3.75, 8.125, 10.125 ],
+			"faces": {
+				"up": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"north": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-232323",
+			"from": [ 3.75, 7.25, 2.875 ],
+			"to": [ 4.625, 7.875, 3 ],
+			"faces": {
+				"down": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"north": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-232323",
+			"from": [ 3.75, 7.25, 3 ],
+			"to": [ 4.625, 7.375, 13.125 ],
+			"faces": {
+				"down": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"up": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-232323",
+			"from": [ 3.75, 7.375, 13 ],
+			"to": [ 4.625, 7.5, 13.125 ],
+			"faces": {
+				"north": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-606060",
+			"from": [ 3.75, 7.5, 13 ],
+			"to": [ 4.625, 8.125, 13.125 ],
+			"faces": {
+				"up": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"north": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-606060",
+			"from": [ 3.75, 7.875, 2.875 ],
+			"to": [ 4.625, 8.125, 3 ],
+			"faces": {
+				"up": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"north": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-606060",
+			"from": [ 3.75, 8, 3 ],
+			"to": [ 4.625, 8.125, 4.625 ],
+			"faces": {
+				"down": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"up": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-606060",
+			"from": [ 3.75, 8, 5.125 ],
+			"to": [ 4.625, 8.125, 10.125 ],
+			"faces": {
+				"down": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"up": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-606060",
+			"from": [ 3.75, 8, 10.625 ],
+			"to": [ 4.625, 8.125, 13 ],
+			"faces": {
+				"down": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"up": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-232323",
+			"from": [ 4.5, 7.375, 3 ],
+			"to": [ 4.625, 7.875, 13 ],
+			"faces": {
+				"up": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-606060",
+			"from": [ 4.5, 7.875, 3 ],
+			"to": [ 4.625, 8, 10.125 ],
+			"faces": {
+				"up": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-999999",
+			"from": [ 4.5, 7.875, 10.125 ],
+			"to": [ 4.625, 8, 10.625 ],
+			"faces": {
+				"west": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-606060",
+			"from": [ 4.5, 7.875, 10.625 ],
+			"to": [ 4.625, 8, 13 ],
+			"faces": {
+				"west": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-999999",
+			"from": [ 4.625, 8, 4.5 ],
+			"to": [ 5.875, 8.125, 4.625 ],
+			"faces": {
+				"down": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"up": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"north": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-999999",
+			"from": [ 4.625, 8, 10.625 ],
+			"to": [ 5.875, 8.125, 10.75 ],
+			"faces": {
+				"down": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"up": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-606060",
+			"from": [ 5.75, 7.375, 2.875 ],
+			"to": [ 5.875, 8, 4.625 ],
+			"faces": {
+				"down": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"up": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"north": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-606060",
+			"from": [ 5.75, 7.375, 4.625 ],
+			"to": [ 5.875, 7.875, 13.125 ],
+			"faces": {
+				"down": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"up": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-999999",
+			"from": [ 5.75, 7.875, 4.625 ],
+			"to": [ 5.875, 8, 5.125 ],
+			"faces": {
+				"west": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-606060",
+			"from": [ 5.75, 7.875, 5.125 ],
+			"to": [ 5.875, 8, 10.125 ],
+			"faces": {
+				"up": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-999999",
+			"from": [ 5.75, 7.875, 10.125 ],
+			"to": [ 5.875, 8, 10.625 ],
+			"faces": {
+				"west": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-606060",
+			"from": [ 5.75, 7.875, 10.625 ],
+			"to": [ 5.875, 8, 13.125 ],
+			"faces": {
+				"up": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-999999",
+			"from": [ 5.75, 8, 5.125 ],
+			"to": [ 5.875, 8.125, 5.25 ],
+			"faces": {
+				"up": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-999999",
+			"from": [ 5.75, 8, 10 ],
+			"to": [ 5.875, 8.125, 10.125 ],
+			"faces": {
+				"up": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"north": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-232323",
+			"from": [ 5.875, 7.25, 2.875 ],
+			"to": [ 6.75, 7.875, 3 ],
+			"faces": {
+				"down": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"north": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-232323",
+			"from": [ 5.875, 7.25, 3 ],
+			"to": [ 6.75, 7.375, 13.125 ],
+			"faces": {
+				"down": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"up": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-232323",
+			"from": [ 5.875, 7.375, 13 ],
+			"to": [ 6.75, 7.5, 13.125 ],
+			"faces": {
+				"north": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-606060",
+			"from": [ 5.875, 7.5, 13 ],
+			"to": [ 6.75, 8.125, 13.125 ],
+			"faces": {
+				"up": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"north": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-606060",
+			"from": [ 5.875, 7.875, 2.875 ],
+			"to": [ 6.75, 8.125, 3 ],
+			"faces": {
+				"up": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"north": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-606060",
+			"from": [ 5.875, 8, 3 ],
+			"to": [ 6.75, 8.125, 4.625 ],
+			"faces": {
+				"down": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"up": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-606060",
+			"from": [ 5.875, 8, 5.125 ],
+			"to": [ 6.75, 8.125, 10.125 ],
+			"faces": {
+				"down": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"up": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-606060",
+			"from": [ 5.875, 8, 10.625 ],
+			"to": [ 6.75, 8.125, 13 ],
+			"faces": {
+				"down": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"up": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-232323",
+			"from": [ 6.625, 7.375, 3 ],
+			"to": [ 6.75, 7.875, 13 ],
+			"faces": {
+				"south": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-606060",
+			"from": [ 6.625, 7.875, 3 ],
+			"to": [ 6.75, 8, 13 ],
+			"faces": {
+				"up": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-999999",
+			"from": [ 6.75, 8, 4.5 ],
+			"to": [ 7.875, 8.125, 4.625 ],
+			"faces": {
+				"down": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"up": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"north": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-999999",
+			"from": [ 6.75, 8, 10.625 ],
+			"to": [ 7.875, 8.125, 10.75 ],
+			"faces": {
+				"down": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"up": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-606060",
+			"from": [ 7.75, 7.375, 2.875 ],
+			"to": [ 7.875, 8, 4.625 ],
+			"faces": {
+				"down": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"up": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"north": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-606060",
+			"from": [ 7.75, 7.375, 4.625 ],
+			"to": [ 7.875, 7.875, 13.125 ],
+			"faces": {
+				"down": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"up": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-999999",
+			"from": [ 7.75, 7.875, 4.625 ],
+			"to": [ 7.875, 8, 5.125 ],
+			"faces": {
+				"west": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-606060",
+			"from": [ 7.75, 7.875, 5.125 ],
+			"to": [ 7.875, 8, 10.125 ],
+			"faces": {
+				"up": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-999999",
+			"from": [ 7.75, 7.875, 10.125 ],
+			"to": [ 7.875, 8, 10.625 ],
+			"faces": {
+				"west": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-606060",
+			"from": [ 7.75, 7.875, 10.625 ],
+			"to": [ 7.875, 8, 13.125 ],
+			"faces": {
+				"up": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-999999",
+			"from": [ 7.75, 8, 5.125 ],
+			"to": [ 7.875, 8.125, 5.25 ],
+			"faces": {
+				"up": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-999999",
+			"from": [ 7.75, 8, 10 ],
+			"to": [ 7.875, 8.125, 10.125 ],
+			"faces": {
+				"up": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"north": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-232323",
+			"from": [ 7.875, 7.25, 2.875 ],
+			"to": [ 8.75, 7.875, 3 ],
+			"faces": {
+				"down": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"north": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-232323",
+			"from": [ 7.875, 7.25, 3 ],
+			"to": [ 8.75, 7.375, 13.125 ],
+			"faces": {
+				"down": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"up": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-232323",
+			"from": [ 7.875, 7.375, 13 ],
+			"to": [ 8.75, 7.5, 13.125 ],
+			"faces": {
+				"north": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-606060",
+			"from": [ 7.875, 7.5, 13 ],
+			"to": [ 8.75, 8.125, 13.125 ],
+			"faces": {
+				"up": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"north": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-606060",
+			"from": [ 7.875, 7.875, 2.875 ],
+			"to": [ 8.75, 8.125, 3 ],
+			"faces": {
+				"up": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"north": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-606060",
+			"from": [ 7.875, 8, 3 ],
+			"to": [ 8.75, 8.125, 4.625 ],
+			"faces": {
+				"down": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"up": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-606060",
+			"from": [ 7.875, 8, 5.125 ],
+			"to": [ 8.75, 8.125, 13 ],
+			"faces": {
+				"down": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"up": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-232323",
+			"from": [ 8.625, 7.375, 3 ],
+			"to": [ 8.75, 7.875, 13 ],
+			"faces": {
+				"south": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-606060",
+			"from": [ 8.625, 7.875, 3 ],
+			"to": [ 8.75, 8, 13 ],
+			"faces": {
+				"up": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-999999",
+			"from": [ 8.75, 8, 4.5 ],
+			"to": [ 10, 8.125, 4.625 ],
+			"faces": {
+				"down": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"up": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"north": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-999999",
+			"from": [ 8.75, 8, 10.125 ],
+			"to": [ 10, 8.125, 10.75 ],
+			"faces": {
+				"down": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"up": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"north": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-606060",
+			"from": [ 9.875, 7.375, 2.875 ],
+			"to": [ 10, 8, 4.625 ],
+			"faces": {
+				"down": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"up": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"north": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-606060",
+			"from": [ 9.875, 7.375, 4.625 ],
+			"to": [ 10, 7.875, 13.125 ],
+			"faces": {
+				"down": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"up": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-999999",
+			"from": [ 9.875, 7.875, 4.625 ],
+			"to": [ 10, 8, 5.125 ],
+			"faces": {
+				"west": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-606060",
+			"from": [ 9.875, 7.875, 5.125 ],
+			"to": [ 10, 8, 10.125 ],
+			"faces": {
+				"up": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-999999",
+			"from": [ 9.875, 7.875, 10.125 ],
+			"to": [ 10, 8, 10.625 ],
+			"faces": {
+				"west": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-606060",
+			"from": [ 9.875, 7.875, 10.625 ],
+			"to": [ 10, 8, 13.125 ],
+			"faces": {
+				"up": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-999999",
+			"from": [ 9.875, 8, 5.125 ],
+			"to": [ 10, 8.125, 5.25 ],
+			"faces": {
+				"up": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-999999",
+			"from": [ 9.875, 8, 10 ],
+			"to": [ 10, 8.125, 10.125 ],
+			"faces": {
+				"up": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"north": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-232323",
+			"from": [ 10, 7.25, 2.875 ],
+			"to": [ 10.875, 7.875, 3 ],
+			"faces": {
+				"down": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"north": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-232323",
+			"from": [ 10, 7.25, 3 ],
+			"to": [ 10.875, 7.375, 13.125 ],
+			"faces": {
+				"down": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"up": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-232323",
+			"from": [ 10, 7.375, 13 ],
+			"to": [ 10.875, 7.5, 13.125 ],
+			"faces": {
+				"north": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-606060",
+			"from": [ 10, 7.5, 13 ],
+			"to": [ 10.875, 8.125, 13.125 ],
+			"faces": {
+				"up": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"north": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-606060",
+			"from": [ 10, 7.875, 2.875 ],
+			"to": [ 10.875, 8.125, 3 ],
+			"faces": {
+				"up": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"north": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-606060",
+			"from": [ 10, 8, 3 ],
+			"to": [ 10.875, 8.125, 13 ],
+			"faces": {
+				"down": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"up": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-232323",
+			"from": [ 10.75, 7.375, 3 ],
+			"to": [ 10.875, 7.875, 13 ],
+			"faces": {
+				"south": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-606060",
+			"from": [ 10.75, 7.875, 3 ],
+			"to": [ 10.875, 8, 13 ],
+			"faces": {
+				"west": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-999999",
+			"from": [ 10.875, 8, 4.5 ],
+			"to": [ 12, 8.125, 5.125 ],
+			"faces": {
+				"down": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"up": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"north": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-999999",
+			"from": [ 10.875, 8, 10.125 ],
+			"to": [ 12, 8.125, 10.75 ],
+			"faces": {
+				"down": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"up": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"north": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-606060",
+			"from": [ 11.875, 7.375, 2.875 ],
+			"to": [ 12, 8, 4.625 ],
+			"faces": {
+				"down": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"up": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"north": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-606060",
+			"from": [ 11.875, 7.375, 4.625 ],
+			"to": [ 12, 7.875, 13.125 ],
+			"faces": {
+				"down": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"up": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-999999",
+			"from": [ 11.875, 7.875, 4.625 ],
+			"to": [ 12, 8, 5.125 ],
+			"faces": {
+				"west": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-606060",
+			"from": [ 11.875, 7.875, 5.125 ],
+			"to": [ 12, 8, 10.125 ],
+			"faces": {
+				"up": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-999999",
+			"from": [ 11.875, 7.875, 10.125 ],
+			"to": [ 12, 8, 10.625 ],
+			"faces": {
+				"west": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-606060",
+			"from": [ 11.875, 7.875, 10.625 ],
+			"to": [ 12, 8, 13.125 ],
+			"faces": {
+				"up": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-999999",
+			"from": [ 11.875, 8, 5.125 ],
+			"to": [ 12, 8.125, 5.25 ],
+			"faces": {
+				"up": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-999999",
+			"from": [ 11.875, 8, 10 ],
+			"to": [ 12, 8.125, 10.125 ],
+			"faces": {
+				"up": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"north": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-232323",
+			"from": [ 12, 7.25, 2.875 ],
+			"to": [ 12.875, 7.875, 3 ],
+			"faces": {
+				"down": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"north": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-232323",
+			"from": [ 12, 7.25, 3 ],
+			"to": [ 12.875, 7.375, 13.125 ],
+			"faces": {
+				"down": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"up": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-232323",
+			"from": [ 12, 7.375, 13 ],
+			"to": [ 12.875, 7.5, 13.125 ],
+			"faces": {
+				"north": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-606060",
+			"from": [ 12, 7.5, 13 ],
+			"to": [ 12.875, 8.125, 13.125 ],
+			"faces": {
+				"up": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"north": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-606060",
+			"from": [ 12, 7.875, 2.875 ],
+			"to": [ 12.875, 8.125, 3 ],
+			"faces": {
+				"up": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"north": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-606060",
+			"from": [ 12, 8, 3 ],
+			"to": [ 12.875, 8.125, 13 ],
+			"faces": {
+				"down": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"up": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-232323",
+			"from": [ 12.75, 7.375, 3 ],
+			"to": [ 12.875, 7.875, 13 ],
+			"faces": {
+				"south": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-606060",
+			"from": [ 12.75, 7.875, 3 ],
+			"to": [ 12.875, 8, 13 ],
+			"faces": {
+				"west": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-999999",
+			"from": [ 12.875, 8, 4.5 ],
+			"to": [ 14.125, 8.125, 5.125 ],
+			"faces": {
+				"down": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"up": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"north": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-999999",
+			"from": [ 12.875, 8, 10.125 ],
+			"to": [ 14.125, 8.125, 10.75 ],
+			"faces": {
+				"down": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"up": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"north": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-606060",
+			"from": [ 14, 7.375, 2.875 ],
+			"to": [ 14.125, 8, 4.625 ],
+			"faces": {
+				"down": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"up": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"north": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-606060",
+			"from": [ 14, 7.375, 4.625 ],
+			"to": [ 14.125, 7.875, 13.125 ],
+			"faces": {
+				"down": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"up": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-999999",
+			"from": [ 14, 7.875, 4.625 ],
+			"to": [ 14.125, 8, 5.125 ],
+			"faces": {
+				"west": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-606060",
+			"from": [ 14, 7.875, 5.125 ],
+			"to": [ 14.125, 8, 10.125 ],
+			"faces": {
+				"up": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-999999",
+			"from": [ 14, 7.875, 10.125 ],
+			"to": [ 14.125, 8, 10.625 ],
+			"faces": {
+				"west": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-606060",
+			"from": [ 14, 7.875, 10.625 ],
+			"to": [ 14.125, 8, 13.125 ],
+			"faces": {
+				"up": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-999999",
+			"from": [ 14, 8, 5.125 ],
+			"to": [ 14.125, 8.125, 5.25 ],
+			"faces": {
+				"up": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-999999",
+			"from": [ 14, 8, 10 ],
+			"to": [ 14.125, 8.125, 10.125 ],
+			"faces": {
+				"up": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"north": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-232323",
+			"from": [ 14.125, 7.25, 2.875 ],
+			"to": [ 15, 7.875, 3 ],
+			"faces": {
+				"down": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"north": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-232323",
+			"from": [ 14.125, 7.25, 3 ],
+			"to": [ 15, 7.375, 13.125 ],
+			"faces": {
+				"down": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"up": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-232323",
+			"from": [ 14.125, 7.375, 13 ],
+			"to": [ 15, 7.5, 13.125 ],
+			"faces": {
+				"north": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-606060",
+			"from": [ 14.125, 7.5, 13 ],
+			"to": [ 15, 8.125, 13.125 ],
+			"faces": {
+				"up": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"north": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-606060",
+			"from": [ 14.125, 7.875, 2.875 ],
+			"to": [ 15, 8.125, 3 ],
+			"faces": {
+				"up": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"north": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-606060",
+			"from": [ 14.125, 8, 3 ],
+			"to": [ 15, 8.125, 13 ],
+			"faces": {
+				"down": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"up": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-232323",
+			"from": [ 14.875, 7.375, 3 ],
+			"to": [ 15, 7.875, 13 ],
+			"faces": {
+				"up": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-606060",
+			"from": [ 14.875, 7.875, 3 ],
+			"to": [ 15, 8, 10.125 ],
+			"faces": {
+				"west": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-999999",
+			"from": [ 14.875, 7.875, 10.125 ],
+			"to": [ 15, 8, 10.625 ],
+			"faces": {
+				"west": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-606060",
+			"from": [ 14.875, 7.875, 10.625 ],
+			"to": [ 15, 8, 13 ],
+			"faces": {
+				"west": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-999999",
+			"from": [ 15, 8, 4.5 ],
+			"to": [ 16.125, 8.125, 5.125 ],
+			"faces": {
+				"down": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"up": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"north": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-999999",
+			"from": [ 15, 8, 10.125 ],
+			"to": [ 16.125, 8.125, 10.75 ],
+			"faces": {
+				"down": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"up": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"north": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-606060",
+			"from": [ 16, 7.375, 2.875 ],
+			"to": [ 16.125, 8, 4.625 ],
+			"faces": {
+				"down": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"up": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"north": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-606060",
+			"from": [ 16, 7.375, 4.625 ],
+			"to": [ 16.125, 7.875, 13.125 ],
+			"faces": {
+				"down": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"up": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-999999",
+			"from": [ 16, 7.875, 4.625 ],
+			"to": [ 16.125, 8, 5.125 ],
+			"faces": {
+				"west": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-606060",
+			"from": [ 16, 7.875, 5.125 ],
+			"to": [ 16.125, 8, 10.125 ],
+			"faces": {
+				"up": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-999999",
+			"from": [ 16, 7.875, 10.125 ],
+			"to": [ 16.125, 8, 10.625 ],
+			"faces": {
+				"west": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-606060",
+			"from": [ 16, 7.875, 10.625 ],
+			"to": [ 16.125, 8, 13.125 ],
+			"faces": {
+				"up": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-999999",
+			"from": [ 16, 8, 5.125 ],
+			"to": [ 16.125, 8.125, 5.25 ],
+			"faces": {
+				"up": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-999999",
+			"from": [ 16, 8, 10 ],
+			"to": [ 16.125, 8.125, 10.125 ],
+			"faces": {
+				"up": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"north": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-232323",
+			"from": [ 16.125, 7.25, 2.875 ],
+			"to": [ 17, 7.875, 3 ],
+			"faces": {
+				"down": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"north": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-232323",
+			"from": [ 16.125, 7.25, 3 ],
+			"to": [ 17, 7.375, 13.125 ],
+			"faces": {
+				"down": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"up": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-232323",
+			"from": [ 16.125, 7.375, 13 ],
+			"to": [ 17, 7.5, 13.125 ],
+			"faces": {
+				"north": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-606060",
+			"from": [ 16.125, 7.5, 13 ],
+			"to": [ 17, 8.125, 13.125 ],
+			"faces": {
+				"up": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"north": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-606060",
+			"from": [ 16.125, 7.875, 2.875 ],
+			"to": [ 17, 8.125, 3 ],
+			"faces": {
+				"up": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"north": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-606060",
+			"from": [ 16.125, 8, 3 ],
+			"to": [ 17, 8.125, 13 ],
+			"faces": {
+				"down": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"up": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-232323",
+			"from": [ 16.875, 7.375, 3 ],
+			"to": [ 17, 7.875, 13 ],
+			"faces": {
+				"up": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"west": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 12.96, 0.96, 15.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-606060",
+			"from": [ 16.875, 7.875, 3 ],
+			"to": [ 17, 8, 10.125 ],
+			"faces": {
+				"west": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-999999",
+			"from": [ 16.875, 7.875, 10.125 ],
+			"to": [ 17, 8, 10.625 ],
+			"faces": {
+				"west": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-606060",
+			"from": [ 16.875, 7.875, 10.625 ],
+			"to": [ 17, 8, 13 ],
+			"faces": {
+				"west": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 8.96, 0.96, 11.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-999999",
+			"from": [ 17, 8, 4.5 ],
+			"to": [ 17.875, 8.125, 5.125 ],
+			"faces": {
+				"down": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"up": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"north": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-999999",
+			"from": [ 17, 8, 10.125 ],
+			"to": [ 18, 8.125, 10.625 ],
+			"faces": {
+				"down": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"up": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"north": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-999999",
+			"from": [ 17, 8, 10.625 ],
+			"to": [ 17.875, 8.125, 10.75 ],
+			"faces": {
+				"down": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"up": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-999999",
+			"from": [ 17.875, 8, 4.625 ],
+			"to": [ 18, 8.125, 5.125 ],
+			"faces": {
+				"down": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"up": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"north": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		},
+		{
+			"__comment": "Voxels-999999",
+			"from": [ 17.875, 8.375, 10.375 ],
+			"to": [ 18, 8.625, 10.5 ],
+			"faces": {
+				"down": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"up": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"north": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"south": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" },
+				"east": { "uv": [ 4.96, 0.96, 7.04, 3.04 ], "texture": "#rail_road_palette" }
+			}
+		}
+	]
+}

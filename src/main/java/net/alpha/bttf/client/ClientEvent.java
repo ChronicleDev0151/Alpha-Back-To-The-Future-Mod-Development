@@ -42,11 +42,11 @@ import java.awt.*;
 import java.text.DecimalFormat;
 import java.util.List;
 
-public class ClientEvent {
-
-    public static boolean renderCarView = false;
+public class ClientEvent
+{
     public static Entity renderEntity = null;
-    public boolean isRemoteControlling = false;
+    public static boolean renderCarView = false;
+    public static boolean isRemoteControlling = false;
     public EntityVehicle vehicle;
     public Entity riding;
     private EntityPlayer playerIn;
@@ -92,6 +92,92 @@ public class ClientEvent {
         }
     }
 
+    @SubscribeEvent
+    public void onPlayerTick(TickEvent.PlayerTickEvent event)
+    {
+        Minecraft mc = Minecraft.getMinecraft();
+        EntityPlayer player = mc.player;
+        if(event.player == player)
+        {
+            isRemoteControlling = false;
+
+            ItemStack stack = player.getHeldItemMainhand();
+            if(stack.getItem() == ModItems.CONTROLLER)
+            {
+                if(stack.hasTagCompound())
+                {
+                    if(stack.getTagCompound().hasKey("linked_car"))
+                    {
+                        isRemoteControlling = true;
+
+                        if(Keyboard.isKeyDown(Keyboard.KEY_W))
+                        {
+                       //.     moveCarForward();
+                        }
+                        if(Keyboard.isKeyDown(Keyboard.KEY_A))
+                        {
+                      //      turnCar(EntityVehicle.TurnDirection.LEFT);
+                        }
+                        if(Keyboard.isKeyDown(Keyboard.KEY_D))
+                        {
+                      //      turnCar(EntityVehicle.TurnDirection.RIGHT);
+                        }
+                        setView(renderEntity);
+                    }
+                }
+            }
+        }
+    }
+
+    public static void setView(Entity entity)
+    {
+        Minecraft mc = Minecraft.getMinecraft();
+        EntityPlayer player = mc.player;
+        if(entity != null)
+        {
+            renderEntity = entity;
+            mc.setRenderViewEntity(renderEntity);
+            renderCarView = true;
+        }
+        else
+        {
+            renderEntity = null;
+            mc.setRenderViewEntity(player);
+            renderCarView = false;
+        }
+    }
+
+ /*   public void moveCarForward()
+    {
+        Entity entity = Minecraft.getMinecraft().player;
+
+        EntityLivingBase entityBase = (EntityLivingBase) entity.getControllingPassenger();
+        if (entity != null && entity.equals(entityBase)) {
+            EntityVehicle.AccelerationDirection acceleration = EntityVehicle.AccelerationDirection.fromEntity(entityBase);
+            if (vehicle.getAcceleration() != acceleration) {
+                vehicle.setAcceleration(acceleration);
+                PacketHandler.INSTANCE.sendToServer(new MessageAcceleration(acceleration));
+            }
+        }
+    } */
+
+ /*   public void turnCar(EntityVehicle.TurnDirection turn)
+    {
+        Entity entity = Minecraft.getMinecraft().player;
+
+        EntityLivingBase entityBase = (EntityLivingBase) entity.getControllingPassenger();
+
+        EntityVehicle.TurnDirection direction = EntityVehicle.TurnDirection.FORWARD;
+        if (entityBase.moveStrafing < 0) {
+            direction = EntityVehicle.TurnDirection.RIGHT;
+        } else if (entityBase.moveStrafing > 0) {
+            direction = EntityVehicle.TurnDirection.LEFT;
+        }
+        if (vehicle.getTurnDirection() != direction) {
+            vehicle.setTurnDirection(direction);
+            PacketHandler.INSTANCE.sendToServer(new MessageTurn(direction));
+        }
+    } */
 
     @SubscribeEvent
     public void onRnderLast(RenderWorldLastEvent event)
@@ -128,6 +214,8 @@ public class ClientEvent {
     }
 
 
+
+
     @SubscribeEvent
     public void onRenderTick(TickEvent.RenderTickEvent event)
     {
@@ -157,6 +245,11 @@ public class ClientEvent {
     @SubscribeEvent
     public void onUpdate(TickEvent.ClientTickEvent event)
     {
+        if(ClientProxy.KEY_ENGINE_STARTUP.isPressed())
+        {
+            EntityVehicle.engineToglle = false;
+        }
+
         if(ClientProxy.KEY_CIRCUITS.isKeyDown())
         {
            Minecraft.getMinecraft().displayGuiScreen(new TimeCircuits());

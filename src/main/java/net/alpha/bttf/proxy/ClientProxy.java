@@ -6,6 +6,8 @@ import net.alpha.bttf.client.ClientEvent;
 import net.alpha.bttf.client.audio.MovingEngineStartupSound;
 import net.alpha.bttf.client.audio.MovingSoundVehicle;
 import net.alpha.bttf.tileentity.TileEntityCarOne;
+import net.alpha.bttf.tileentity.TileEntityRailRoad;
+import net.alpha.bttf.tileentity.render.RenderRailRoad;
 import net.alpha.bttf.tileentity.render.RenderTileEntityCarOne;
 import net.alpha.bttf.vehicles.EntityCarOne;
 import net.alpha.bttf.vehicles.EntityCarTwo;
@@ -33,7 +35,7 @@ public class ClientProxy implements Proxy {
     public static final KeyBinding KEY_CAMERA = new KeyBinding("key.camera.desc", Keyboard.KEY_C, "key.categories.bttf");
     public static final KeyBinding KEY_HOVER_BRAKE = new KeyBinding("key.hover.brake", Keyboard.KEY_G, "key.categories.bttf");
     public static final KeyBinding KEY_CIRCUITS = new KeyBinding("key.circuits", Keyboard.KEY_Z, "key.categories.bttf");
-    public static final KeyBinding KEY_ENGINE_STARTUP = new KeyBinding("key.vehicle", Keyboard.KEY_LCONTROL, "key.categories.bttf");
+    public static final KeyBinding KEY_ENGINE_STARTUP = new KeyBinding("key.vehicle", Keyboard.KEY_NUMPAD0, "key.categories.bttf");
 
     @Override
     public void preInit() {
@@ -43,7 +45,6 @@ public class ClientProxy implements Proxy {
         ClientRegistry.registerKeyBinding(KEY_ENGINE_STARTUP);
         RenderingRegistry.registerEntityRenderingHandler(EntityCarOne.class, RenderCarOne::new);
         RenderingRegistry.registerEntityRenderingHandler(EntityCarTwo.class, RenderCarTwo::new);
-        ClientRegistry.bindTileEntitySpecialRenderer(TileEntityCarOne.class, new RenderTileEntityCarOne());
 
 
         MinecraftForge.EVENT_BUS.register(new ClientEvent());

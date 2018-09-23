@@ -48,7 +48,7 @@ public class EntityCarTwo extends EntityTimeTravelConvertableVehicle
     }
 
 
-    @Override
+  /*  @Override
     public SoundEvent getBeginGate() {
         return null;
     }
@@ -61,11 +61,11 @@ public class EntityCarTwo extends EntityTimeTravelConvertableVehicle
     @Override
     public SoundEvent getEmtptyGate() {
         return null;
-    }
+    } */
 
     @Override
     public SoundEvent getMovingSound() {
-        return ModSounds.ENGINE_FORWARD;
+        return ModSounds.IDLE;
     }
 
     @Override

@@ -1,5 +1,6 @@
 package net.alpha.bttf.entity.render;
 
+import net.alpha.bttf.entity.EntityDeloreanOneVehicleFeatures;
 import net.alpha.bttf.entity.EntityTimeTravelVehicle;
 import net.alpha.bttf.entity.EntityVehicleCore;
 import net.alpha.bttf.proxy.ClientProxy;
@@ -42,7 +43,7 @@ public class Wheels
         this(side, position, 2.0F, scale, offsetX, offsetY, offsetZ);
     }
 
-    public void render(EntityTimeTravelVehicle vehicle, float partialTicks)
+    public void render(EntityDeloreanOneVehicleFeatures vehicle, float partialTicks)
     {
         GlStateManager.pushMatrix();
         {
@@ -71,7 +72,7 @@ public class Wheels
         GlStateManager.popMatrix();
     }
 
-    private float getWheelRotation(EntityTimeTravelVehicle vehicle, float partialTicks)
+    private float getWheelRotation(EntityDeloreanOneVehicleFeatures vehicle, float partialTicks)
     {
         if(position == Position.REAR)
         {

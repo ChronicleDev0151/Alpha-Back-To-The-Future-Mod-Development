@@ -8,6 +8,7 @@ import net.alpha.bttf.init.ModBlocks;
 import net.alpha.bttf.gui.GuiHandler;
 import net.alpha.bttf.init.ModItems;
 import net.alpha.bttf.init.RegistryHandler;
+import net.alpha.bttf.init.TileEntityRegistry;
 import net.alpha.bttf.network.PacketHandler;
 import net.alpha.bttf.proxy.Proxy;
 import net.alpha.bttf.vehicles.EntityCarOne;
@@ -69,8 +70,9 @@ public class Main {
 
         PacketHandler.init();
 
-        RegistryHandler.init();
+        TileEntityRegistry.init();
 
+        RegistryHandler.init();
 
         proxy.preInit();
         registerVehicles();

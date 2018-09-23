@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": {"model": "bttf:rail_road_mini", "y": 270},
+    "facing=south": { "model": "bttf:rail_road_mini", "y": 90},
+    "facing=east": { "model": "bttf:rail_road_mini"},
+    "facing=west": { "model": "bttf:rail_road_mini", "y": 180}
+  }
+}
