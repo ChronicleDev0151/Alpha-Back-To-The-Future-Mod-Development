@@ -22,31 +22,45 @@ import java.util.Objects;
 
 public class ModItems
 {
+
+    // BTTF 1 DELOREAN
     public static final Item BODY;
     public static final Item WHEEL;
+
+    // BTTF 2 DELOREAN
     public static final Item BODY_TWO;
     public static final Item CAR_ONE_SPAWN;
+
+    // MISC
     public static final Item CONTROLLER;
     public static final Item DOOR_LEFT;
     public static final Item DOOR_RIGHT;
     public static final Item WHEEL_HOVERING;
 
+
+    // TAB STUFF
     public static final Item ICON;
 
+    // DEFAULT DELOREAN
+    public static final Item DEFAULT_BODY;
+
+
+    // POWER
     public static final Item PLUTONIUM_PLUG;
 
     static
     {
         ICON = new ItemIcon();
-        BODY = new ItemBody();
-        WHEEL = new ItemWheel();
-        BODY_TWO = new ItemBodyTwo();
+        BODY = new ItemBody("body_one");
+        WHEEL = new ItemWheel("wheel");
+        BODY_TWO = new ItemBody("body_two");
         CONTROLLER = new ItemController();
         CAR_ONE_SPAWN = new ItemCarOne();
-        DOOR_LEFT = new ItemDoor();
-        DOOR_RIGHT = new ItemDoor2();
-        WHEEL_HOVERING = new ItemWHover();
+        DOOR_LEFT = new ItemDoor("door");
+        DOOR_RIGHT = new ItemDoor("door_2");
+        WHEEL_HOVERING = new ItemWheel("hover_wheel");
         PLUTONIUM_PLUG = new ItemPlug("plutonium_plug");
+        DEFAULT_BODY = new ItemBody("default_body");
     }
 
     public static void register() {
@@ -60,6 +74,7 @@ public class ModItems
         register(DOOR_RIGHT);
         register(WHEEL_HOVERING);
         register(PLUTONIUM_PLUG);
+        register(DEFAULT_BODY);
     }
 
     private static void register(Item item) {

@@ -4,6 +4,7 @@ import net.alpha.bttf.timetravel.TimeTravelTypes;
 import net.minecraft.network.datasync.DataParameter;
 import net.minecraft.network.datasync.DataSerializers;
 import net.minecraft.network.datasync.EntityDataManager;
+import net.minecraft.util.SoundEvent;
 import net.minecraft.world.World;
 
 public abstract class EntityTimeTravelVehicle extends EntityVehicle {
@@ -11,6 +12,8 @@ public abstract class EntityTimeTravelVehicle extends EntityVehicle {
     private static final DataParameter<Integer> TIME_TRAVEL_TYPE = EntityDataManager.createKey(EntityTimeTravelVehicle.class, DataSerializers.VARINT);
 
     private TimeTravelTypes timeTravelTypes;
+
+    public abstract SoundEvent getEmptyGate();
 
     @Override
     public void entityInit() {
@@ -38,12 +41,6 @@ public abstract class EntityTimeTravelVehicle extends EntityVehicle {
                 TimeTravelTypes type = TimeTravelTypes.getType(this.dataManager.get(TIME_TRAVEL_TYPE));
                 this.timeTravelTypes = type;
             }
-     /*       if(TURBO_TYPE.equals(key))
-            {
-                TurboType typeTurbo = TurboType.getType(this.dataManager.get(TURBO_TYPE));
-                this.turboType = typeTurbo;
-                turbo.setItemDamage(typeTurbo.ordinal());
-            } */
         }
     }
 

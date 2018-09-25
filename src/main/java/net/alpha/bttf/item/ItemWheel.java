@@ -4,8 +4,8 @@ import net.minecraft.item.Item;
 
 public class ItemWheel extends Item
 {
-    public ItemWheel() {
-        this.setRegistryName("wheel");
-        this.setUnlocalizedName("wheel");
+    public ItemWheel(String id) {
+        this.setRegistryName(id);
+        this.setUnlocalizedName(id);
     }
 }

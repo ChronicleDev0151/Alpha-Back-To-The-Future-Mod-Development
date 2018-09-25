@@ -1,8 +1,7 @@
 package net.alpha.bttf.network.messages;
 
 import io.netty.buffer.ByteBuf;
-import net.alpha.bttf.entity.EntityTimeTravelConvertableVehicle;
-import net.alpha.bttf.entity.EntityTimeTravelHoverVehicle;
+import net.alpha.bttf.entity.EntityDeloreanTwoVehicleFeatures;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.entity.EntityPlayerSP;
 import net.minecraft.entity.Entity;
@@ -13,11 +12,11 @@ import net.minecraftforge.fml.common.network.simpleimpl.MessageContext;
 
 public class MessageHover implements IMessage, IMessageHandler<MessageHover, IMessage>
 {
-    private EntityTimeTravelConvertableVehicle.HoverDirection flapDirection;
+    private EntityDeloreanTwoVehicleFeatures.HoverDirection flapDirection;
 
     public MessageHover() {}
 
-    public MessageHover(EntityTimeTravelConvertableVehicle.HoverDirection flapDirection)
+    public MessageHover(EntityDeloreanTwoVehicleFeatures.HoverDirection flapDirection)
     {
         this.flapDirection = flapDirection;
     }
@@ -31,7 +30,7 @@ public class MessageHover implements IMessage, IMessageHandler<MessageHover, IMe
     @Override
     public void fromBytes(ByteBuf buf)
     {
-        this.flapDirection = EntityTimeTravelConvertableVehicle.HoverDirection.values()[buf.readInt()];
+        this.flapDirection = EntityDeloreanTwoVehicleFeatures.HoverDirection.values()[buf.readInt()];
     }
 
     @Override
@@ -39,9 +38,9 @@ public class MessageHover implements IMessage, IMessageHandler<MessageHover, IMe
     {
         EntityPlayerMP player = ctx.getServerHandler().player;
         Entity riding = player.getRidingEntity();
-        if(riding instanceof EntityTimeTravelConvertableVehicle)
+        if(riding instanceof EntityDeloreanTwoVehicleFeatures)
         {
-            ((EntityTimeTravelConvertableVehicle) riding).setFlapDirection(message.flapDirection);
+            ((EntityDeloreanTwoVehicleFeatures) riding).setHoverDirection(message.flapDirection);
         }
         return null;
     }

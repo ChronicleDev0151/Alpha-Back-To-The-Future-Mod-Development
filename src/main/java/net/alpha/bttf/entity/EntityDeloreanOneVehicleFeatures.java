@@ -1,6 +1,8 @@
 package net.alpha.bttf.entity;
 
+import net.alpha.bttf.init.ModSounds;
 import net.alpha.bttf.network.PacketHandler;
+import net.alpha.bttf.network.messages.MessageBrake;
 import net.alpha.bttf.network.messages.MessageDrift;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -8,11 +10,13 @@ import net.minecraft.block.state.IBlockState;
 import net.minecraft.client.Minecraft;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.network.datasync.DataParameter;
 import net.minecraft.network.datasync.DataSerializers;
 import net.minecraft.network.datasync.EntityDataManager;
 import net.minecraft.util.EnumParticleTypes;
+import net.minecraft.util.SoundCategory;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.math.Vec3d;
@@ -53,9 +57,10 @@ public abstract class EntityDeloreanOneVehicleFeatures extends EntityTimeTravelV
         prevFrontWheelRotation = frontWheelRotation;
         prevRearWheelRotation = rearWheelRotation;
 
-        this.updateDrifting();
         this.updateWheels();
     }
+
+
 
     @Override
     public void onClientUpdate()
@@ -64,12 +69,12 @@ public abstract class EntityDeloreanOneVehicleFeatures extends EntityTimeTravelV
         EntityLivingBase entity = (EntityLivingBase) this.getControllingPassenger();
         if(entity != null && entity.equals(Minecraft.getMinecraft().player))
         {
-            boolean drifting = Minecraft.getMinecraft().gameSettings.keyBindJump.isKeyDown();
+       /*     boolean drifting = Minecraft.getMinecraft().gameSettings.keyBindJump.isKeyDown();
             if(this.isDrifting() != drifting)
             {
                 this.setDrifting(drifting);
                 PacketHandler.INSTANCE.sendToServer(new MessageDrift(drifting));
-            }
+            } */
         }
     }
 

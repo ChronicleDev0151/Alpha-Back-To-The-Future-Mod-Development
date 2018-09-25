@@ -13,6 +13,7 @@ import net.alpha.bttf.network.PacketHandler;
 import net.alpha.bttf.proxy.Proxy;
 import net.alpha.bttf.vehicles.EntityCarOne;
 import net.alpha.bttf.vehicles.EntityCarTwo;
+import net.alpha.bttf.vehicles.EntityDefaultDelorean;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.enchantment.EnumEnchantmentType;
 import net.minecraft.entity.Entity;
@@ -92,6 +93,7 @@ public class Main {
     {
         registerVehicle("car_one", EntityCarOne.class);
         registerVehicle("car_two", EntityCarTwo.class);
+        registerVehicle("default_delorean", EntityDefaultDelorean.class);
     }
 
     private void registerVehicle(String id, Class<? extends EntityVehicle> clazz)

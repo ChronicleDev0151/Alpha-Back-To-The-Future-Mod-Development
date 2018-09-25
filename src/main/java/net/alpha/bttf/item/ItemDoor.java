@@ -4,9 +4,9 @@ import net.minecraft.item.Item;
 
 public class ItemDoor extends Item
 {
-    public ItemDoor()
+    public ItemDoor(String id)
     {
-        this.setRegistryName("door");
-        this.setUnlocalizedName("door");
+        this.setRegistryName(id);
+        this.setUnlocalizedName(id);
     }
 }

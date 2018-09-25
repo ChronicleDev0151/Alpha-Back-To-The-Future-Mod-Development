@@ -3,6 +3,7 @@ package net.alpha.bttf.init;
 import net.alpha.bttf.blocks.BlockCarOne;
 import net.alpha.bttf.blocks.BlockPlutoniumCase;
 import net.alpha.bttf.blocks.BlockRailRoad;
+import net.alpha.bttf.blocks.BlockScaledBTTF3Delorean;
 import net.alpha.bttf.item.ItemBlockVehicle;
 import net.minecraft.block.Block;
 import net.minecraft.item.ItemBlock;
@@ -15,6 +16,7 @@ public class ModBlocks
     public static final Block car_two_model;
 
     public static final Block RAIL_ROAD;
+    public static final Block CAR_THREE_SCALED;
 
     static
     {
@@ -22,6 +24,7 @@ public class ModBlocks
         plutonium_case = new BlockPlutoniumCase("plutonium_case");
         car_two_model = new BlockPlutoniumCase("car_two_model");
         RAIL_ROAD = new BlockRailRoad();
+        CAR_THREE_SCALED = new BlockScaledBTTF3Delorean();
     }
 
     public static void register()
@@ -30,6 +33,7 @@ public class ModBlocks
         registerBlock(car_two_model, new ItemBlockVehicle(car_two_model));
         registerBlock(plutonium_case, new ItemBlockVehicle(plutonium_case));
         registerBlock(RAIL_ROAD, new ItemBlockVehicle(RAIL_ROAD));
+        registerBlock(CAR_THREE_SCALED, new ItemBlockVehicle(CAR_THREE_SCALED));
     }
 
     private static void registerBlock(Block block)

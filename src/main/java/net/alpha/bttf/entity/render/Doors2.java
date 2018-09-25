@@ -2,7 +2,6 @@ package net.alpha.bttf.entity.render;
 
 
 import net.alpha.bttf.entity.EntityTimeTravelVehicle;
-import net.alpha.bttf.entity.EntityVehicleCore;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.client.renderer.block.model.ItemCameraTransforms;

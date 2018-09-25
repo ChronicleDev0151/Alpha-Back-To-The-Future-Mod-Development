@@ -16,7 +16,7 @@ public class PacketHandler
         INSTANCE.registerMessage(MessageTurn.class, MessageTurn.class, 1, Side.SERVER);
         INSTANCE.registerMessage(MessageHover.class, MessageHover.class, 3, Side.SERVER);
         INSTANCE.registerMessage(MessageBrake.class, MessageBrake.class, 4, Side.SERVER);
-        INSTANCE.registerMessage(MessageTimeTravel.class, MessageTimeTravel.class, 5, Side.SERVER);
+        INSTANCE.registerMessage(MessageDrift.class, MessageDrift.class, 5, Side.SERVER);
 //        INSTANCE.registerMessage(MessagePlutoniumInteraction.class, MessagePlutoniumInteraction.class, 6, Side.SERVER);
         INSTANCE.registerMessage(MessageEngine.class, MessageEngine.class, 6, Side.SERVER);
     }

@@ -12,8 +12,10 @@ import net.alpha.bttf.tileentity.render.RenderTileEntityCarOne;
 import net.alpha.bttf.vehicles.EntityCarOne;
 import net.alpha.bttf.vehicles.EntityCarTwo;
 import net.alpha.bttf.entity.EntityVehicle;
+import net.alpha.bttf.vehicles.EntityDefaultDelorean;
 import net.alpha.bttf.vehicles.render.RenderCarOne;
 import net.alpha.bttf.vehicles.render.RenderCarTwo;
+import net.alpha.bttf.vehicles.render.RenderDefaultDelorean;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.settings.KeyBinding;
 import net.minecraft.entity.Entity;
@@ -45,6 +47,7 @@ public class ClientProxy implements Proxy {
         ClientRegistry.registerKeyBinding(KEY_ENGINE_STARTUP);
         RenderingRegistry.registerEntityRenderingHandler(EntityCarOne.class, RenderCarOne::new);
         RenderingRegistry.registerEntityRenderingHandler(EntityCarTwo.class, RenderCarTwo::new);
+        RenderingRegistry.registerEntityRenderingHandler(EntityDefaultDelorean.class, RenderDefaultDelorean::new);
 
 
         MinecraftForge.EVENT_BUS.register(new ClientEvent());

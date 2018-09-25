@@ -27,9 +27,11 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.EntitySelectors;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Vec3d;
 import net.minecraft.util.text.TextFormatting;
 import net.minecraft.world.World;
 import net.minecraftforge.client.event.EntityViewRenderEvent;
+import net.minecraftforge.client.event.RenderGameOverlayEvent;
 import net.minecraftforge.client.event.RenderPlayerEvent;
 import net.minecraftforge.client.event.RenderWorldLastEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
@@ -227,14 +229,30 @@ public class ClientEvent
                 EntityPlayer player = mc.player;
                 if(player != null) {
                     Entity entity = player.getRidingEntity();
-                    if (entity instanceof EntityVehicle) {
-                        EntityVehicle vehicle = (EntityVehicle) entity;
+                    if (entity instanceof EntityTimeTravelVehicle) {
+                        EntityTimeTravelVehicle vehicle = (EntityTimeTravelVehicle) entity;
+
+                        String speed = new DecimalFormat("0.0").format(vehicle.getKilometersPreHour());
+                        mc.fontRenderer.drawStringWithShadow(TextFormatting.BOLD + "BPS: " + TextFormatting.RED + speed, 10, 10, Color.RED.getRGB());
+                        String PLUTONIUM_LEVEL = new DecimalFormat("0").format(vehicle.getCurrentFuel());
+                        mc.fontRenderer.drawStringWithShadow(TextFormatting.BOLD + "Plutonium Level: " + TextFormatting.YELLOW + PLUTONIUM_LEVEL, 10, 20, Color.WHITE.getRGB());
+                    }
+                    if (entity instanceof EntityDeloreanTwoVehicleFeatures) {
+                        EntityDeloreanTwoVehicleFeatures vehicle = (EntityDeloreanTwoVehicleFeatures) entity;
 
                         String speed = new DecimalFormat("0.0").format(vehicle.getKilometersPreHour());
                         mc.fontRenderer.drawStringWithShadow(TextFormatting.BOLD + "BPS: " + TextFormatting.RED + speed, 10, 10, Color.RED.getRGB());
                         String PLUTONIUM_LEVEL = new DecimalFormat("0").format(vehicle.getCurrentFuel());
                         mc.fontRenderer.drawStringWithShadow(TextFormatting.BOLD + "Plutonium Level: " + TextFormatting.YELLOW + PLUTONIUM_LEVEL, 10, 20, Color.WHITE.getRGB());
 
+                  /*      String Hspeed = new DecimalFormat("0.0").format(vehicle.getHoverSpeed());
+                        mc.fontRenderer.drawStringWithShadow(TextFormatting.BOLD + "Hover BPS: " + TextFormatting.RED + Hspeed, 10, 30, Color.RED.getRGB()); */
+                    }
+                    if(entity instanceof EntityDefaultVehicle)
+                    {
+                        EntityDefaultVehicle vehicle = (EntityDefaultVehicle) entity;
+                        String speed = new DecimalFormat("0.0").format(vehicle.getKilometersPreHour());
+                        mc.fontRenderer.drawStringWithShadow(TextFormatting.BOLD + "BPS: " + TextFormatting.RED + speed, 10, 10, Color.RED.getRGB());
                     }
                 }
             }
@@ -254,11 +272,31 @@ public class ClientEvent
         {
            Minecraft.getMinecraft().displayGuiScreen(new TimeCircuits());
         }
-        if(ClientProxy.KEY_HOVER.isKeyDown())
-        {
-            EntityTimeTravelHoverVehicle.hover = true;
-        }
     }
 
+    @SubscribeEvent
+    public void onRender(RenderGameOverlayEvent.Pre event)
+    {
+        Minecraft mc = Minecraft.getMinecraft();
+        EntityPlayer entity = mc.player;
+        Entity ridimng = entity.getRidingEntity();
+
+     /*   if(ridimng instanceof EntityVehicle)
+        {
+                Vec3d vec3 = mc.player.getLookVec();
+                double dx = vec3.x * -10;
+                double dy = vec3.y * -10;
+                double dz = vec3.z * -10;
+
+                mc.getRenderViewEntity().copyLocationAndAnglesFrom(mc.player);
+
+                mc.getRenderViewEntity().posX += dx;
+                mc.getRenderViewEntity().posY += dy;
+                mc.getRenderViewEntity().posZ += dz;
+
+                vec3 = null;
+        } */
+
+    }
 }
 

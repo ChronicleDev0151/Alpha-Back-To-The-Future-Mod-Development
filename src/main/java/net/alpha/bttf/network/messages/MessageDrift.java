@@ -1,7 +1,9 @@
 package net.alpha.bttf.network.messages;
 
 import io.netty.buffer.ByteBuf;
+import net.alpha.bttf.entity.EntityDefaultVehicle;
 import net.alpha.bttf.entity.EntityDeloreanOneVehicleFeatures;
+import net.alpha.bttf.entity.EntityDeloreanTwoVehicleFeatures;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraftforge.fml.common.network.simpleimpl.IMessage;
@@ -39,6 +41,14 @@ public class MessageDrift implements IMessage, IMessageHandler<MessageDrift, IMe
         if(riding instanceof EntityDeloreanOneVehicleFeatures)
         {
             ((EntityDeloreanOneVehicleFeatures) riding).setDrifting(message.drifting);
+        }
+        if(riding instanceof EntityDeloreanTwoVehicleFeatures)
+        {
+            ((EntityDeloreanTwoVehicleFeatures) riding).setDrifting(message.drifting);
+        }
+        if(riding instanceof EntityDefaultVehicle)
+        {
+            ((EntityDefaultVehicle) riding).setDrifting(message.drifting);
         }
         return null;
     }

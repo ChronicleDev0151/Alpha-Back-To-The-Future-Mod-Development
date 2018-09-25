@@ -149,7 +149,6 @@ public abstract class EntityVehicle extends Entity implements IEntityAdditionalS
 
     public abstract SoundEvent getEngineStartupSound();
 
-    public abstract SoundEvent getEmptyGate();
 
 
     @Override
@@ -279,12 +278,11 @@ public abstract class EntityVehicle extends Entity implements IEntityAdditionalS
         /* Handle the current speed of the vehicle based on rider's forward movement */
         this.updateTurning();
         this.updateSpeed();
-        this.updateVehicle();
         this.updateBrakeSystem();
+        this.updateVehicle();
         this.updateEngineSystem();
         this.setSpeed(currentSpeed);
         this.updateTurning();
-        this.updatePassenger(getControllingPassenger());
         this.updateVehicleMotion();
         this.onClientUpdate();
 
@@ -330,35 +328,6 @@ public abstract class EntityVehicle extends Entity implements IEntityAdditionalS
             Doors.open = true;
             Doors2.open = true;
         }
-    }
-
-    public void updateBrakeSystem() {
-        boolean brake = Minecraft.getMinecraft().gameSettings.keyBindJump.isKeyDown();
-
-        if (this.isBraking() != brake) {
-            this.setBrakeSystemOn(brake);
-            PacketHandler.INSTANCE.sendToServer(new MessageBrake());
-        }
-
-        AccelerationDirection Accdirection = getAcceleration();
-        TurnDirection direction = this.getTurnDirection();
-        if (this.getControllingPassenger() != null && this.isBraking()) {
-            this.currentSpeed -= this.getAccelerationSpeed();
-            if (this.isBraking() && this.currentSpeed < -(0.0F)) {
-                this.currentSpeed = -(0.0F);
-            }
-
-            this.deltaYaw = this.wheelAngle * (currentSpeed / 30F) / (this.isBraking() ? 1.5F : 2F);
-        }
-        if (this.remoteControlling == true && isBraking() & currentSpeed == 0F) {
-            world.playSound((EntityPlayer) null, getPosition(), ModSounds.RC_BRAKE, SoundCategory.AMBIENT, 5.0F, 1.0F);
-        }
-        if (Accdirection == AccelerationDirection.FORWARD && this.isBraking() & currentSpeed == 0F) {
-            world.playSound((EntityPlayer) null, getPosition(), ModSounds.REV, SoundCategory.AMBIENT, 2.5F, 1.0F);
-        }
-    /*    if (EntityTimeTravelConvertableVehicle.INSTANCE.isHovering() == true) {
-            brake = ClientProxy.KEY_HOVER_BRAKE.isKeyDown();
-        } */
     }
 
     /**
@@ -433,6 +402,33 @@ public abstract class EntityVehicle extends Entity implements IEntityAdditionalS
         else
         {
 
+        }
+    }
+
+
+    public void updateBrakeSystem() {
+        boolean brake = Minecraft.getMinecraft().gameSettings.keyBindJump.isKeyDown();
+
+        if (this.isBraking() != brake) {
+            this.setBrakeSystemOn(brake);
+            PacketHandler.INSTANCE.sendToServer(new MessageBrake());
+        }
+
+        AccelerationDirection Accdirection = getAcceleration();
+        TurnDirection direction = this.getTurnDirection();
+        if (this.getControllingPassenger() != null && this.isBraking()) {
+            this.currentSpeed -= this.getAccelerationSpeed();
+            if (this.isBraking() && this.currentSpeed < -(0.0F)) {
+                this.currentSpeed = -(0.0F);
+            }
+
+            this.deltaYaw = this.wheelAngle * (currentSpeed / 30F) / (this.isBraking() ? 1.5F : 2F);
+        }
+        if (this.remoteControlling == true && isBraking() & currentSpeed == 0F) {
+            world.playSound((EntityPlayer) null, getPosition(), ModSounds.RC_BRAKE, SoundCategory.AMBIENT, 5.0F, 1.0F);
+        }
+        if (Accdirection == AccelerationDirection.FORWARD && this.isBraking() & currentSpeed == 0F) {
+            world.playSound((EntityPlayer) null, getPosition(), ModSounds.REV, SoundCategory.AMBIENT, 2.5F, 1.0F);
         }
     }
 
@@ -814,15 +810,15 @@ public abstract class EntityVehicle extends Entity implements IEntityAdditionalS
     public enum AccelerationDirection {
         FORWARD, NONE, REVERSE;
 
-        public static AccelerationDirection fromEntity(EntityLivingBase entity) {
-            if (entity.moveForward > 0) {
-                return FORWARD;
-            } else if (entity.moveForward < 0) {
-                return REVERSE;
-            }
-            return NONE;
+    public static AccelerationDirection fromEntity(EntityLivingBase entity) {
+        if (entity.moveForward > 0) {
+            return FORWARD;
+        } else if (entity.moveForward < 0) {
+            return REVERSE;
         }
+        return NONE;
     }
+}
 
     @Override
     public void writeSpawnData(ByteBuf buffer) {

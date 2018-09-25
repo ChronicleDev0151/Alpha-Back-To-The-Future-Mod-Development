@@ -8,13 +8,12 @@ import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.client.renderer.RenderHelper;
 import net.minecraft.client.renderer.block.model.ItemCameraTransforms;
 import net.minecraft.client.renderer.entity.RenderManager;
-import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.util.ResourceLocation;
 
 import javax.annotation.Nullable;
 
-public class RenderCarOne extends RenderTimeTravelVehicle<EntityCarOne>
+public class RenderCarOne extends RenderDeloreanOne<EntityCarOne>
 {
 
     public ResourceLocation texture = new ResourceLocation(Reference.MOD_ID, "textures/travel/overlay.png");
@@ -28,14 +27,14 @@ public class RenderCarOne extends RenderTimeTravelVehicle<EntityCarOne>
         positions.add(new ZexusPosition(1, 5.0F, 1.7F, 1.7F, 1.0F, 1.0F, ZexusPosition.Position.FRONT, ZexusPosition.Side.LEFT, null, null, false));
         positions.add(new ZexusPosition(1, 5.0F, 1.7F, -1.7F, 1.0F, 1.0F, ZexusPosition.Position.FRONT, ZexusPosition.Side.LEFT, null, null, false)); */
 
-        wheels.add(new Wheels(Wheels.Side.LEFT, Wheels.Position.FRONT, 5.0F, -1.7F, 7.9F, 0.3F));
-        wheels.add(new Wheels(Wheels.Side.RIGHT, Wheels.Position.FRONT, 5.0F, -1.7F, 7.9F,  0.3F));
-        wheels.add(new Wheels(Wheels.Side.LEFT, Wheels.Position.REAR, 5.0F, -1.7F, -7.9F, 0.3F));
-        wheels.add(new Wheels(Wheels.Side.RIGHT, Wheels.Position.REAR, 5.0F, -1.7F, -7.9F, 0.3F));
+        wheels.add(new WheelsBTTF(WheelsBTTF.Side.LEFT, WheelsBTTF.Position.FRONT, 5.0F, -1.7F, 7.9F, 0.3F));
+        wheels.add(new WheelsBTTF(WheelsBTTF.Side.RIGHT, WheelsBTTF.Position.FRONT, 5.0F, -1.7F, 7.9F,  0.3F));
+        wheels.add(new WheelsBTTF(WheelsBTTF.Side.LEFT, WheelsBTTF.Position.REAR, 5.0F, -1.7F, -7.9F, 0.3F));
+        wheels.add(new WheelsBTTF(WheelsBTTF.Side.RIGHT, WheelsBTTF.Position.REAR, 5.0F, -1.7F, -7.9F, 0.3F));
 
 
-        doors.add(new Doors_Hover(Doors_Hover.Side.RIGHT, Doors_Hover.Position.RIGHT, 3.57F, 1.2F, 0.120F, 0.50F));
-        doors2.add(new Doors_Hover2(Doors_Hover2.Side.LEFT, Doors_Hover2.Position.LEFT, 3.44F, 1.2F, 0.120F, 0.50F));
+        doors.add(new Doors(Doors.Side.RIGHT, Doors.Position.RIGHT, 3.57F, 1.2F, 0.120F, 0.50F));
+        doors2.add(new Doors2(Doors2.Side.LEFT, Doors2.Position.LEFT, 3.44F, 1.2F, 0.120F, 0.50F));
     }
 
     @Nullable

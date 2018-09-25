@@ -4,8 +4,8 @@ import net.minecraft.item.Item;
 
 public class ItemBody extends Item
 {
-    public ItemBody() {
-        this.setRegistryName("body_one");
-        this.setUnlocalizedName("body_one");
+    public ItemBody(String id) {
+        this.setRegistryName(id);
+        this.setUnlocalizedName(id);
     }
 }
